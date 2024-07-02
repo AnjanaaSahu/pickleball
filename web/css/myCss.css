@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav{
+    padding: 0 50px;
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-one{
+    background: rgb(121, 228, 228);
+    color: black;
+    height: 40px;
+    cursor: pointer;
+}
+
+.left> div+div {
+    margin-left: 40px;
+}
+
+.nav-one>div:hover{
+    color: white;
+    transition: all 0.5s;
+}
+.nav-second{
+    background-color: rgb(244, 246, 245);
+    height: 70px;
+}
+.logo{
+    text-transform: uppercase;
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    margin-left: 30px;
+    color: black;
+    font-weight: 400;
+
+}
+section{
+    width: 100%;
+    height: 140vh;
+    background:url(../img/court2.jpg) no-repeat center center / cover;
+}
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    margin-top: 60px;
+}
+
+main p {
+    font-size: 1.7rem;
+}
+footer {
+    background-color: rgb(121, 228, 228);
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+/*main ul{
+    display: flex;
+    margin-top: 250px;
+    justify-content: center;
+    
+}*/
+
+:root{
+    --bg1: rgb(247, 201, 116);
+    ;
+    --bg2: rgb(247, 201, 116);
+    --bg3: rgb(247, 201, 116);
+    ;
+    --bg4: rgb(247, 201, 116);
+    ;
+
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 1fr 1fr ;
+    align-items: center;
+    transition: all 3s ease-in;
+    transition-delay:1s;
+}
+
+.card{
+    background-color: wheat;
+    padding: 30px;
+    border-radius: 12px;
+    transition: all 10s ease-in;
+    margin-top: 200px;
+}
+
+.card .img-holder{
+    width: 100%;
+    height: 75px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: all 10s ease-in;
+}
+
+.card:nth-child(1) .img-holder{
+    background-color: var(--bg1);
+}
+
+.card:nth-child(2) .img-holder{
+    background-color: var(--bg2);
+}
+
+.card:nth-child(3) .img-holder{
+    background-color: var(--bg3);
+}
+
+.card:nth-child(4) .img-holder{
+    background-color: var(--bg4);
+}
+
+.card h3{
+    margin-bottom: 15px;
+
+}
+.card a {
+
+    /*transition: opacity 10s ease-in-out;*/
+    transition-delay: 0.1s;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 4px;
+}
+
+.card-content{
+    height: 35px;
+    overflow: hidden;
+    /*transition: all 3s ease-in-out;*/
+}
+
+.card:hover .img-holder{
+    transform: scale(1);    
+    margin-top: -120px;
+
+}
+
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ccc;
+}
+
+.profile_img{
+    /*    width: 100%;
+       
+        height: 140vh;
+        background:url(../img/ground.jpg) no-repeat center center cover;*/
+    background-image: url(../img/ground.jpg);
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
